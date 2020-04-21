@@ -24,6 +24,8 @@ categories: build a simple webpage
 http://justoy-test-alumni.s3-website-us-west-2.amazonaws.com/
 
 ## DynamoDb
+ddb是一个按需付费，自动scale的key-value数据库，点点鼠标即可创建
+
 ddb部分很简单，进入aws console，创建一个新table即可。
 
 创建时选择ondemend table，按需付钱，对个人用户几乎免费。
@@ -32,7 +34,7 @@ primary key是uid，即一个uuid。好处是分布均匀，具备唯一行。
 sort key选择用户email
 
 ## Lambda
-lambda相对复杂。
+lambda也是按需付费，自动scale，点点鼠标即可创建
 
 我们先创建一个lambda，就叫作test-ddb吧。用python3作为运行环境。
 
